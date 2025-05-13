@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".e-t-navigation-list");
-  const headerRef = document.querySelector(".e-t-header");
-  const navigationRef = document.querySelector(".e-t-navigation");
+  const navListRef = document.querySelector(".e-y-navigation-list");
+  const headerRef = document.querySelector(".e-y-header");
+  const navigationRef = document.querySelector(".e-y-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 });
-document.querySelectorAll(".e-t-why-item").forEach((item) => {
+document.querySelectorAll(".e-y-why-item").forEach((item) => {
   item.addEventListener("click", () => {
     const card = item.querySelector(".card");
     card.classList.toggle("flipped");
@@ -29,7 +29,7 @@ document.querySelectorAll(".e-t-why-item").forEach((item) => {
 
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".e-t-toggle-button img");
+  const buttonImg = element.querySelector(".e-y-toggle-button img");
 
   if (answer.style.display === "none" || answer.style.display === "") {
     answer.style.display = "block";
